@@ -1,10 +1,10 @@
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <Navbar />
+    <HeroSection />
+    <Contact />
+    <Footer />
   </div>
 </template>
 <script setup lang="ts">
-const runtimeConfig = useRuntimeConfig();
-console.log(runtimeConfig.public.directus)
 </script>
