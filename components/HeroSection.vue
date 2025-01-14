@@ -7,8 +7,15 @@
                 <div class="bg-gradient-to-br from-orange-200 to-amber-100 p-3 rounded-2xl  animate-bounce">
                     <LucideStar class="w-8 h-8 text-orange-500" />
                 </div>
+                <div class="bg-gradient-to-br from-orange-200 to-amber-100 p-3 rounded-2xl  animate-bounce">
+                    <LucideStar class="w-8 h-8 text-orange-500" />
+                </div>
+                <div class="bg-gradient-to-br from-orange-200 to-amber-100 p-3 rounded-2xl  animate-bounce flex items-center justify-center">
+                    <Icon name="lucide:star" class="!p-0 w-8 h-8 text-orange-500" />
+                </div>
             </div>
-            <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-text bg-gradient-to-r from-red-600 via-orange-600 to-amber-600 bg-clip-text text-transparent">
+            <h1
+                class="text-5xl md:text-6xl font-bold mb-6 animate-text bg-gradient-to-r from-red-600 via-orange-600 to-amber-600 bg-clip-text text-transparent">
                 Grow Your Business Online
             </h1>
             <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -44,15 +51,20 @@
 </template>
 <style scoped>
 @keyframes animateText {
-          0%, 100% {
-            background-size: 200% 200%;
-            background-position: left center;
-          }
-          50% {
-            background-size: 200% 200%;
-            background-position: right center;
-          }
-        }
-        .animate-text {
-          animation: animateText 3s ease-in-out infinite;
-        }</style>
+
+    0%,
+    100% {
+        background-size: 200% 200%;
+        background-position: left center;
+    }
+
+    50% {
+        background-size: 200% 200%;
+        background-position: right center;
+    }
+}
+
+.animate-text {
+    animation: animateText 3s ease-in-out infinite;
+}
+</style>
