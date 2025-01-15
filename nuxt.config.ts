@@ -22,11 +22,13 @@ export default defineNuxtConfig({
     // Options
   },
   runtimeConfig: {
+    apiUrl: {
+      url: process.env.DIRECTUS_URL
+    },
     public: {
       directus: {
         url: process.env.DIRECTUS_URL
       },
-
-    }
+    },
   }
 })

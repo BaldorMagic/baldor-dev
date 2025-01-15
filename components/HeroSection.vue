@@ -4,14 +4,8 @@
     <section class="pt-32 pb-20 px-4 bg-gradient-to-b from-orange-50 to-white">
         <div class="max-w-6xl mx-auto text-center">
             <div class="mb-6 flex justify-center">
-                <div class="bg-gradient-to-br from-orange-200 to-amber-100 p-3 rounded-2xl  animate-bounce">
-                    <LucideStar class="w-8 h-8 text-orange-500" />
-                </div>
-                <div class="bg-gradient-to-br from-orange-200 to-amber-100 p-3 rounded-2xl  animate-bounce">
-                    <LucideStar class="w-8 h-8 text-orange-500" />
-                </div>
                 <div class="bg-gradient-to-br from-orange-200 to-amber-100 p-3 rounded-2xl  animate-bounce flex items-center justify-center">
-                    <Icon name="lucide:star" class="!p-0 w-8 h-8 text-orange-500" />
+                    <Icon :name=star class="!p-0 w-8 h-8 text-orange-500" />
                 </div>
             </div>
             <h1
@@ -49,6 +43,9 @@
         </div>
     </section>
 </template>
+<script setup lang="ts">
+const star: string = 'lucide:arrow-down-right'
+</script>
 <style scoped>
 @keyframes animateText {
 
