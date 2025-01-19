@@ -20,6 +20,7 @@
     "nuxt": "^3.15.1",
     "nuxt-directus": "^5.7.0",
     "nuxt-lucide-icons": "^1.0.5",
+    "nuxt-security": "^2.1.5",
     "vite": "^6.0.7",
     "vue": "latest",
     "vue-router": "latest"

@@ -44,7 +44,7 @@
     </section>
 </template>
 <script setup lang="ts">
-const star: string = 'lucide:arrow-down-right'
+const star: string = 'lucide:star'
 </script>
 <style scoped>
 @keyframes animateText {

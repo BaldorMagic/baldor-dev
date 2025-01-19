@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
     'nuxt-lucide-icons',
-    'nuxt-directus'
+    'nuxt-directus',
   ],
   image: {
     // Options
@@ -23,7 +23,12 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     directus: {
-      url: process.env.DIRECTUS_URL
+      url: ""
     },
-  }
+    public: {
+      directus: {
+        url: ""
+      }
+    },
+  },
 })
