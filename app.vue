@@ -26,10 +26,10 @@
   }
 
   const iconColor = {
-    orange: 'text-orange-600',
-    teal: 'text-teal-600',
-    sky: 'text-sky-600',
-    purple: 'text-purple-600'
+    orange: ['text-orange-600', 'text-orange-400'],
+    teal: ['text-teal-600', 'text-teal-500'],
+    sky: ['text-sky-600', 'text-sky-500'],
+    purple: 'text-purple-600',
   }
 
   const bgColor = {
