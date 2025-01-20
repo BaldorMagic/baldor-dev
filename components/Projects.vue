@@ -8,7 +8,7 @@
                 <div v-for="(project, index) in projects" :key="index"
                     class="group bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100"
                     @mouseenter="activeProject = index" @mouseleave="activeProject = 0">
-                    <div :class="`bg-gradient-to-br ${project.gradient_from} ${project.gradient_to} rounded-xl p-4 w-fit`">
+                    <div :class="`bg-gradient-to-br ${project.gradient_from} ${project.gradient_to} rounded-xl p-4 w-fit flex items-center justify-center`">
                         <Icon :name=project.icon class="!p-0 w-8 h-8" :class="project.icon_color"/>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-gray-700">{{ project.title }}</h3>
@@ -58,13 +58,4 @@ interface Projects {
 const projects = await getItems<Projects>({
     collection: "projects"
 });
-
-console.log('All projects:', projects.map(p => ({
-  title: p.title,
-  gradient_from: p.gradient_from,
-  gradient_to: p.gradient_to,
-  icon: p.icon,
-  icon_color: p.icon_color
-})));
-
 </script>
