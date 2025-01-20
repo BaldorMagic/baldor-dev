@@ -30,5 +30,6 @@ export default defineNuxtConfig({
         url: ""
       }
     },
+    ssr: true
   },
 })
