@@ -44,7 +44,7 @@
     </section>
 </template>
 <script setup lang="ts">
-const icon: string = 'lucide:star'
+const icon: string = 'hugeicons:monster'
 </script>
 <style scoped>
 @keyframes animateText {
