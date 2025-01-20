@@ -5,7 +5,7 @@
         <div class="max-w-6xl mx-auto text-center">
             <div class="mb-6 flex justify-center">
                 <div class="bg-gradient-to-br from-orange-200 to-amber-100 p-3 rounded-2xl  animate-bounce flex items-center justify-center">
-                    <Icon :name=star class="!p-0 w-8 h-8 text-orange-500" />
+                    <Icon :name=icon class="!p-0 w-8 h-8 text-orange-600"/>
                 </div>
             </div>
             <h1
@@ -44,7 +44,7 @@
     </section>
 </template>
 <script setup lang="ts">
-const star: string = 'lucide:star'
+const icon: string = 'lucide:star'
 </script>
 <style scoped>
 @keyframes animateText {

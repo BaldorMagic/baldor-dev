@@ -8,8 +8,8 @@
                 <div v-for="(project, index) in projects" :key="index"
                     class="group bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100"
                     @mouseenter="activeProject = index" @mouseleave="activeProject = 0">
-                    <div :class="`bg-gradient-to-b from-teal-50 to-white-4 bg-gradient-to-br ${project.color} rounded-xl p-4 w-fit`">
-                        <component :is="project.icon" class="w-8 h-8" :class="project.icon_color" />
+                    <div :class="`bg-gradient-to-br ${project.gradient_from} ${project.gradient_to} rounded-xl p-4 w-fit`">
+                        <Icon :name=project.icon class="!p-0 w-8 h-8" :class="project.icon_color"/>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-gray-700">{{ project.title }}</h3>
                     <p class="text-gray-600 mb-4 text-sm">{{ project.description }}</p>
@@ -36,7 +36,7 @@
     </section>
 </template>
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import { ref } from 'vue';
 
 const activeProject = ref(0);
 const { getItems } = useDirectusItems();
@@ -58,4 +58,13 @@ interface Projects {
 const projects = await getItems<Projects>({
     collection: "projects"
 });
+
+console.log('All projects:', projects.map(p => ({
+  title: p.title,
+  gradient_from: p.gradient_from,
+  gradient_to: p.gradient_to,
+  icon: p.icon,
+  icon_color: p.icon_color
+})));
+
 </script>
