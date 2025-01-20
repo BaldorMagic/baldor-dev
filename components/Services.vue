@@ -6,7 +6,7 @@
                 <div v-for="(service, index) in services" :key="index"
                     class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
                     <div
-                        :class="['mb-4 bg-[${service.background_color}] w-12 h-12 rounded-xl flex items-center justify-center']">
+                        :class="`mb-4 b${service.bg_color} w-12 h-12 rounded-xl flex items-center justify-center`">
                         {{ service.icon }}
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-gray-700">{{ service.title }}</h3>
