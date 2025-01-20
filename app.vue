@@ -3,6 +3,9 @@
     <Navbar />
     <HeroSection />
     <Projects />
+    <Services />
+    <Contact />
+    <Footer />
   </div>
 </template>
 <script setup lang="ts">
@@ -27,5 +30,11 @@
     teal: 'text-teal-600',
     sky: 'text-sky-600',
     purple: 'text-purple-600'
+  }
+
+  const bgColor = {
+    teal: 'bg-teal-50',
+    orange: 'bg-orange-50',
+    sky: 'bg-sky-50'
   }
 </script>

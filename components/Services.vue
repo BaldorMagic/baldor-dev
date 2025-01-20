@@ -5,9 +5,8 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <div v-for="(service, index) in services" :key="index"
                     class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-                    <div
-                        :class="`mb-4 b${service.bg_color} w-12 h-12 rounded-xl flex items-center justify-center`">
-                        {{ service.icon }}
+                    <div :class="`mb-4 ${service.bg_color} w-12 h-12 rounded-xl flex items-center justify-center`">
+                        <Icon :name=service.icon class="!p-0 w-8 h-8" :class="service.icon_color"/>
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-gray-700">{{ service.title }}</h3>
                     <p class="text-gray-600 mb-4">{{ service.description }}</p>
