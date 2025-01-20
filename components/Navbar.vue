@@ -17,26 +17,41 @@
                     class="bg-orange-400 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition-colors">Get
                     Qhote</NuxtLink>
             </div>
-            <Transition enter-active-class="transition duration-200 ease-out"
-                enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
-                leave-active-class="transition duration-100 ease-in" leave-from-class="transform scale-100 opacity-100"
-                leave-to-class="transform scale-95 opacity-0">
-                <div v-if="isOpen" class="lg:hidden mt-4 pb-4 space-y-4 flex flex-col items-start">
-                    <NuxtLink to="#projects" class="text-gray-600 hover:text-orange-400 transition-colors"
-                        @click="isOpen = false">
-                        Results
-                    </NuxtLink>
-                    <NuxtLink to="#services" class="text-gray-600 hover:text-orange-400 transition-colors"
-                        @click="isOpen = false">
-                        Services
-                    </NuxtLink>
-                    <NuxtLink to="#contact"
-                        class="bg-orange-400 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition-colors"
-                        @click="isOpen = false">
-                        Get Quote
-                    </NuxtLink>
-                </div>
-            </Transition>
+                <Transition
+        enter-active-class="transition duration-200 ease-out"
+        enter-from-class="transform scale-95 opacity-0"
+        enter-to-class="transform scale-100 opacity-100"
+        leave-active-class="transition duration-100 ease-in"
+        leave-from-class="transform scale-100 opacity-100"
+        leave-to-class="transform scale-95 opacity-0"
+      >
+        <div
+          v-if="isOpen"
+          class="lg:hidden mt-4 pb-4 space-y-4 flex flex-col items-start"
+        >
+          <NuxtLink 
+            to="#projects" 
+            class="text-gray-600 hover:text-orange-400 transition-colors"
+            @click="isOpen = false"
+          >
+            Results
+          </NuxtLink>
+          <NuxtLink 
+            to="#services" 
+            class="text-gray-600 hover:text-orange-400 transition-colors"
+            @click="isOpen = false"
+          >
+            Services
+          </NuxtLink>
+          <NuxtLink 
+            to="#contact" 
+            class="bg-orange-400 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition-colors"
+            @click="isOpen = false"
+          >
+            Get Quote
+          </NuxtLink>
+        </div>
+      </Transition>
         </div>
     </nav>
 </template>
