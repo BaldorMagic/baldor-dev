@@ -39,7 +39,7 @@
 import { ref } from 'vue';
 
 const activeProject = ref(0);
-const { getItems } = useDirectusItems();
+// const { getItems } = useDirectusItems();
 
 interface Projects {
     
@@ -55,7 +55,20 @@ interface Projects {
     icon_color: string;
 }
 
-const projects = await getItems<Projects>({
-    collection: "projects"
-});
+// const projects = await getItems<Projects>({
+//     collection: "projects"
+// });
+
+const useProjects = () => {
+    return useAsyncData('projects', () => {
+        const { getItems } = useDirectusItems();
+        return getItems({
+            collection: 'projects'
+        });
+    }, {
+        server: true
+    });
+}
+
+const { data: projects } = await useProjects();
 </script>

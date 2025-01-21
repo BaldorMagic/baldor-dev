@@ -32,4 +32,15 @@ export default defineNuxtConfig({
     },
     ssr: true
   },
+  ssr: true,
+  directus: {
+    url: process.env.NUXT_DIRECTUS_URL
+  },
+  routeRules: {
+    '/': {
+      ssr: true,
+      cors: true,
+      prerender: true
+    }
+  }
 })
