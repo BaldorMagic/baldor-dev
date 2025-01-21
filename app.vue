@@ -1,9 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <HeroSection />
-    <Projects />
-    <Services />
+    <NuxtPage />
     <Contact />
     <Footer />
   </div>
