@@ -9,7 +9,7 @@
                 </div>
             </div>
             <h1
-                class="text-5xl md:text-6xl font-bold mb-6 animate-text bg-gradient-to-r from-red-600 via-orange-600 to-amber-600 bg-clip-text text-transparent">
+                class="text-5xl md:text-6xl font-bold mb-6 animated-text bg-gradient-to-r from-red-600 via-orange-600 to-amber-600 bg-clip-text text-transparent">
                 Grow Your Business Online
             </h1>
             <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -61,7 +61,8 @@ const icon: string = 'hugeicons:monster'
     }
 }
 
-.animate-text {
+.animated-text {
+    will-change: animation;
     animation: animateText 3s ease-in-out infinite;
 }
 </style>
