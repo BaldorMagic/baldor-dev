@@ -18,7 +18,7 @@
             </p>
             <div class="flex flex-col md:flex-row justify-center gap-4">
                 <NuxtLink to="#contact"
-                    class="bg-orange-400 text-white px-8 py-3 rounded-lg hover:bg-orange-500 transition-colors">
+                    class="bg-orange-600 text-white px-8 py-3 rounded-lg hover:bg-orange-500 transition-colors">
                     Get Free Consultation
                 </NuxtLink>
                 <NuxtLink to="#projects"

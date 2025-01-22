@@ -35,7 +35,7 @@
                             class="w-full bg-gray-100 text-gray-600 px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-300 focus:border-transparent" />
                     </div>
                     <button type="submit" value="Submit"
-                        class="w-full bg-orange-400 text-white py-4 px-8 rounded-lg hover:bg-orange-500 transition-colors font-medium">
+                        class="w-full bg-orange-600 text-white py-4 px-8 rounded-lg hover:bg-orange-500 transition-colors font-medium">
                         Schedule Free Consultation
                     </button>
                 </form>

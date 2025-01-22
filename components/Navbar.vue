@@ -14,7 +14,7 @@
           <NuxtLink to="#services" class="text-gray-600 hover:text-orange-400 transition-colors">
             Services
           </NuxtLink>
-          <NuxtLink to="#contact" class="bg-orange-400 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition-colors">
+          <NuxtLink to="#contact" class="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition-colors">
             Lets Connect
           </NuxtLink>
         </div>
@@ -36,7 +36,7 @@
               <NuxtLink to="#services" class="text-gray-600 hover:text-orange-400 transition-colors" @click="isOpen = false">
                 Services
               </NuxtLink>
-              <NuxtLink to="#contact" class="bg-orange-400 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition-colors" @click="isOpen = false">
+              <NuxtLink to="#contact" class="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition-colors" @click="isOpen = false">
                 Lets connect
               </NuxtLink>
             </div>
