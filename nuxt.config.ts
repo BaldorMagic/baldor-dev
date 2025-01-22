@@ -18,7 +18,10 @@ export default defineNuxtConfig({
       meta: [
         {name: 'description', content: 'Frontend developer specialized in Vue.js, tailwindcss and Typescript. Building performant, accessible and beautiful web applications.'},
         {name: 'robots', content: 'index, follow'}
-      ]
+      ],
+      htmlAttrs: {
+        lang: 'en'
+      }
     }
   },
   image: {
