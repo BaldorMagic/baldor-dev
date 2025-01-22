@@ -5,11 +5,12 @@
                 Real Results for Businesses
             </h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div v-for="(project, index) in projects as Projects[]" :key="index"
+                <div v-for="(project, index) in projects" :key="index"
                     class="group bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100"
                     @mouseenter="activeProject = index" @mouseleave="activeProject = 0">
-                    <div :class="`bg-gradient-to-br ${project.gradient_from} ${project.gradient_to} rounded-xl p-4 w-fit flex items-center justify-center`">
-                        <Icon :name=project.icon class="!p-0 w-8 h-8" :class="project.icon_color"/>
+                    <div
+                        :class="`bg-gradient-to-br ${project.gradient_from} ${project.gradient_to} rounded-xl p-4 w-fit flex items-center justify-center`">
+                        <Icon :name=project.icon class="!p-0 w-8 h-8" :class="project.icon_color" />
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-gray-700">{{ project.title }}</h3>
                     <p class="text-gray-600 mb-4 text-sm">{{ project.description }}</p>
@@ -36,12 +37,12 @@
     </section>
 </template>
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 
 const activeProject = ref(0);
 
 interface Projects {
-    
+
     id: number;
     title: string;
     description: string;
@@ -54,23 +55,13 @@ interface Projects {
     icon_color: string;
 }
 
-
-const useProjects = () => {
-    return useAsyncData('projects', () => {
-        const { getItems } = useDirectusItems();
-        return getItems({
-            collection: 'projects'
-        });
-    }, {
-        server: true
-    });
-}
-
 const projects = ref<Projects[]>([]);
 
 onMounted(async () => {
-    const { data } = await useProjects();
-    if (data.value) {
-        projects.value = data.value as Projects[];
-    }
-});</script>
+    const { getItems } = useDirectusItems();
+    const data = await getItems({
+        collection: 'projects'
+    });
+    projects.value = data as Projects[];
+});
+</script>
