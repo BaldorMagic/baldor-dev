@@ -4,15 +4,14 @@
     <section class="pt-32 pb-20 px-4 bg-gradient-to-b from-orange-50 to-white">
         <div class="max-w-6xl mx-auto text-center">
             <div class="mb-6 flex justify-center">
-                <div
-                    class="bg-gradient-to-br from-orange-200 to-amber-100 p-3 rounded-2xl  animate-bounce flex items-center justify-center">
-                    <Icon :name=icon class="!p-0 w-8 h-8 text-orange-600" />
+                <div class="bg-gradient-to-br from-orange-200 to-amber-100 p-3 rounded-2xl  animate-bounce flex items-center justify-center">
+                    <Icon :name=icon class="!p-0 w-8 h-8 text-orange-600"/>
                 </div>
             </div>
-            <title
+            <h1
                 class="text-5xl md:text-6xl font-bold mb-6 animate-text bg-gradient-to-r from-red-600 via-orange-600 to-amber-600 bg-clip-text text-transparent">
                 Grow Your Business Online
-            </title>
+            </h1>
             <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
                 I help small businesses increase their revenue with professional websites,
                 online stores, and local SEO. Get more customers and simplify your operations.

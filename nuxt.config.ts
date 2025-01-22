@@ -12,6 +12,11 @@ export default defineNuxtConfig({
     'nuxt-lucide-icons',
     'nuxt-directus',
   ],
+  app: {
+    head: {
+      title: 'Creative Solutions Through Code | Frontend Developer'
+    }
+  },
   image: {
     // Options
   },
