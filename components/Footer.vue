@@ -6,10 +6,10 @@
                     <h3 class="text-xl font-bold mb-4">Ready to grow your business?</h3>
                     <p class="mb-4">Let's discuss how I can help you reach more customers and increase revenue.</p>
                     <div class="flex space-x-4">
-                        <a href="https://www.linkedin.com/in/james-neveu" class="text-gray-300 hover:text-orange-300" target="_blank">
+                        <a href="https://www.linkedin.com/in/james-neveu" aria-label="Lets link on linkedin" class="text-gray-300 hover:text-orange-300" target="_blank">
                             <LucideLinkedin size="24" />
                         </a>
-                        <a href="mailto:james@baldor.dev" class="text-gray-300 hover:text-orange-300">
+                        <a href="mailto:james@baldor.dev" aria-label="lets get in touch by email" class="text-gray-300 hover:text-orange-300">
                             <LucideMail size="24" />
                         </a>
                     </div>
