@@ -1,7 +1,9 @@
 <template>
   <div>
     <Navbar />
-    <NuxtPage />
+    <HeroSection />
+    <Projects />
+    <Services />
     <Contact />
     <Footer />
   </div>
@@ -35,4 +37,18 @@
     orange: 'bg-orange-50',
     sky: 'bg-sky-50'
   }
+  // const useProjects = () => {
+  //   return useAsyncData('projects', () => {
+  //       const { getItems } = useDirectusItems();
+  //       return getItems({
+  //           collection: 'projects'
+  //       });
+  //   }, {
+  //       server: true
+  //   });
+  // }
+  // const services = await getItems<Services>({
+  //   collection: "services"
+  // });
+
 </script>
