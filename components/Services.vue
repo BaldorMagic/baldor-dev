@@ -17,7 +17,7 @@
     </section>
 </template>
 <script setup lang="ts">
-const { getItems } = useDirectusItems();
+// const { getItems } = useDirectusItems();
 
 
 interface Services {
@@ -29,7 +29,20 @@ interface Services {
     icon_color: string;
     bg_color: string;
 }
-const services = await getItems<Services>({
-    collection: "services"
-});
+// const services = await getItems<Services>({
+//     collection: "services"
+// });
+
+const useProjects = () => {
+    return useAsyncData('services', () => {
+        const { getItems } = useDirectusItems();
+        return getItems({
+            collection: 'services'
+        });
+    }, {
+        server: true
+    });
+}
+
+const { data: services } = await useProjects();
 </script>
