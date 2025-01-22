@@ -39,25 +39,6 @@
 import { ref } from 'vue';
 
 const activeProject = ref(0);
-// const { getItems } = useDirectusItems();
-
-interface Projects {
-    
-    id: number;
-    title: string;
-    description: string;
-    metrics: JSON;
-    tags: JSON;
-    url: string;
-    gradient_from: string;
-    gradient_to: string;
-    icon: string;
-    icon_color: string;
-}
-
-// const projects = await getItems<Projects>({
-//     collection: "projects"
-// });
 
 const useProjects = () => {
     return useAsyncData('projects', () => {

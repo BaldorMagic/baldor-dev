@@ -17,8 +17,6 @@
     </section>
 </template>
 <script setup lang="ts">
-// const { getItems } = useDirectusItems();
-
 
 interface Services {
     id: number;
@@ -29,9 +27,6 @@ interface Services {
     icon_color: string;
     bg_color: string;
 }
-// const services = await getItems<Services>({
-//     collection: "services"
-// });
 
 const useProjects = () => {
     return useAsyncData('services', () => {
