@@ -36,7 +36,7 @@
     </section>
 </template>
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 
 const activeProject = ref(0);
 
@@ -66,5 +66,11 @@ const useProjects = () => {
     });
 }
 
-const { data: projects } = await useProjects();
-</script>
+const projects = ref<Projects[]>([]);
+
+onMounted(async () => {
+    const { data } = await useProjects();
+    if (data.value) {
+        projects.value = data.value as Projects[];
+    }
+});</script>
