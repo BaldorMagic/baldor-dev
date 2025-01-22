@@ -2,9 +2,9 @@
     <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
       <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col lg:flex-row justify-between items-start lg:items-center">
         <!-- Title -->
-        <span class="text-xl font-bold text-gray-700 whitespace-nowrap">
+        <h1 class="text-xl font-bold text-gray-700 whitespace-nowrap">
           Web Solutions for Businesses
-        </span>
+        </h1>
         
         <!-- Desktop menu -->
         <div class="hidden lg:flex space-x-8 items-center">

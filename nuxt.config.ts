@@ -16,7 +16,8 @@ export default defineNuxtConfig({
     head: {
       title: 'Creative Solutions Through Code | Frontend Developer',
       meta: [
-        {name: 'description', content: 'Frontend developer specialized in Vue.js, tailwindcss and Typescript. Building performant, accessible and beautiful web applications.'}
+        {name: 'description', content: 'Frontend developer specialized in Vue.js, tailwindcss and Typescript. Building performant, accessible and beautiful web applications.'},
+        {name: 'robots', content: 'index, follow'}
       ]
     }
   },

@@ -8,10 +8,10 @@
                     <Icon :name=icon class="!p-0 w-8 h-8 text-orange-600"/>
                 </div>
             </div>
-            <h1
+            <h2
                 class="text-5xl md:text-6xl font-bold mb-6 animated-text bg-gradient-to-r from-red-600 via-orange-600 to-amber-600 bg-clip-text text-transparent">
                 Grow Your Business Online
-            </h1>
+            </h2>
             <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
                 I help small businesses increase their revenue with professional websites,
                 online stores, and local SEO. Get more customers and simplify your operations.
