@@ -15,7 +15,7 @@
             Services
           </NuxtLink>
           <NuxtLink to="#contact" class="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition-colors">
-            Lets Connect
+            Let's Connect
           </NuxtLink>
         </div>
     
@@ -37,7 +37,7 @@
                 Services
               </NuxtLink>
               <NuxtLink to="#contact" class="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition-colors" @click="isOpen = false">
-                Lets connect
+                Let's connect
               </NuxtLink>
             </div>
           </div>
