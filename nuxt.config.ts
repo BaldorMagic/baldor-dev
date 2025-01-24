@@ -5,10 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/devtools',
     '@nuxt/icon',
-    '@nuxt/image',
-    '@nuxt/fonts',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/i18n',
     'nuxt-lucide-icons',
     'nuxt-directus',
   ],
@@ -31,12 +28,6 @@ export default defineNuxtConfig({
         {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'} 
       ]
     }
-  },
-  image: {
-    // Options
-  },
-  fonts: {
-    // Options
   },
   tailwindcss: {
     // Options
