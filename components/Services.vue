@@ -10,6 +10,14 @@
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-gray-700">{{ service.title }}</h3>
                     <p class="text-gray-600 mb-4">{{ service.description }}</p>
+                    <div class="mb-4">
+                        <h4 class="text-sm font-semibold text-gray-500 mb-1">Best For</h4>
+                        <p class="text-gray-600">{{ service.best_for }}</p>
+                    </div>
+                    <div v-if="service.timeframe"class="mb-4">
+                        <h4 class="text-sm font-semibold text-gray-500 mb-1">Timeframe</h4>
+                        <p class="text-gray-600">{{ service.timeframe }}</p>
+                    </div>
                     <div class="text-2xl font-bold text-orange-600">{{ service.price }}</div>
                 </div>
             </div>
@@ -23,6 +31,8 @@ interface Services {
     id: number;
     title: string;
     description: string;
+    best_for: string;
+    timeframe: string;
     price: string;
     icon: string;
     icon_color: string;

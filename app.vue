@@ -30,12 +30,15 @@
     teal: ['text-teal-600', 'text-teal-500'],
     sky: ['text-sky-600', 'text-sky-500'],
     purple: 'text-purple-600',
+    pink: 'text-pink-500'
   }
 
   const bgColor = {
     teal: 'bg-teal-50',
     orange: 'bg-orange-50',
-    sky: 'bg-sky-50'
+    sky: 'bg-sky-50',
+    purple: 'bg-purple-50',
+    pink: 'bg-pink-50'
   }
 
 
