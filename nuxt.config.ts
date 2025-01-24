@@ -57,5 +57,8 @@ export default defineNuxtConfig({
       cors: true,
       prerender: true
     }
+  },
+  build: {
+    analyze: true
   }
 })
