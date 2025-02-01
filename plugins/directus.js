@@ -1,4 +1,4 @@
-import { createDirectus, rest, readItem, readItems } from '@directus/sdk';
+import { createDirectus, staticToken, rest, readItem, readItems } from '@directus/sdk';
 
 
 export default defineNuxtPlugin(() => {

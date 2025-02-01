@@ -5,8 +5,8 @@
     <div class="grid md:grid-cols-3 gap-8">
       <div v-for="(service, index) in services" :key="index"
         class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col">
-        <div :class="`mb-4 ${service.bg_color} w-12 h-12 rounded-xl flex items-center justify-center`">
-          <Icon :name=service.icon class="!p-0 w-8 h-8" :class="service.icon_color" />
+        <div :class="`mb-4 ${bgColor[index]} w-12 h-12 rounded-xl flex items-center justify-center`">
+          <Icon :name=service.icon class="!p-0 w-8 h-8" :class="iconColor[index]" />
         </div>
         <h3 class="text-xl font-bold mb-2 text-gray-700">{{ service.title }}</h3>
         <p class="text-gray-600 mb-4">{{ service.description }}</p>
@@ -41,11 +41,13 @@ interface Services {
     timeframe: string;
     price: string;
     icon: string;
-    icon_color: string;
-    bg_color: string;
 }
 
 const services = ref<Services[]>([]);
+const iconColor: string[] = ['text-sky-500', 'text-orange-400', 'text-purple-600', 'text-pink-500'];
+const bgColor: string[] = ['bg-sky-50', 'bg-orange-50', 'bg-purple-50', 'bg-pink-50'];
+
+
 
 onMounted(async () => {
     const { getItems } = useDirectusItems();

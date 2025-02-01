@@ -9,8 +9,8 @@
                     class="group bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100"
                     @mouseenter="activeProject = index" @mouseleave="activeProject = 0">
                     <div
-                        :class="`bg-gradient-to-br ${project.gradient_from} ${project.gradient_to} rounded-xl p-4 w-fit flex items-center justify-center`">
-                        <Icon :name=project.icon class="!p-0 w-8 h-8" :class="project.icon_color" />
+                        :class="`bg-gradient-to-br ${gradientFrom[index]} ${gradientTo[index]} rounded-xl p-4 w-fit flex items-center justify-center`">
+                        <Icon :name=project.icon class="!p-0 w-8 h-8" :class="iconColor[index]" />
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-gray-700">{{ project.title }}</h3>
                     <p class="text-gray-600 mb-4 text-sm">{{ project.description }}</p>
@@ -40,6 +40,11 @@
 import { ref } from 'vue';
 
 const activeProject = ref(0);
+const iconColor: string[] = ['text-orange-600', 'text-teal-600', 'text-sky-600', 'text-purple-600', 'text-pink-500']
+const gradientFrom: string[] = ['from-orange-300', 'from-teal-300', 'from-sky-300', 'from-purple-200', 'from-rose-200']
+const gradientTo: string[] = ['to-amber-200', 'to-emerald-200', 'to-blue-200', 'to-violet-200', 'to-pink-200']
+
+
 
 interface Projects {
 
@@ -49,10 +54,7 @@ interface Projects {
     metrics: JSON;
     tags: JSON;
     url: string;
-    gradient_from: string;
-    gradient_to: string;
     icon: string;
-    icon_color: string;
 }
 
 const projects = ref<Projects[]>([]);
