@@ -1,4 +1,6 @@
-# Nuxt Minimal Starter
+# baldor.dev - commercial website
+
+This project contains the code for baldor. It was made with love, Nuxt.js and directus. Directus is the headless CMS.
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
