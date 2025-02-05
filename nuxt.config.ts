@@ -35,8 +35,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     directus: {
       url: ""
-    },
-    ssr: true
+    }
   },
   ssr: true,
   routeRules: {

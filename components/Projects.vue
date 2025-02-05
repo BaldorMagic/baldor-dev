@@ -61,7 +61,7 @@ const projects = ref<Projects[]>([]);
 
 onMounted(async () => {
     const { getItems } = useDirectusItems();
-    const data = await getItems({
+    const data = await getItems<Projects>({
         collection: 'projects'
     });
     projects.value = data as Projects[];
