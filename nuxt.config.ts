@@ -41,7 +41,6 @@ export default defineNuxtConfig({
   ssr: true,
   routeRules: {
     '/': {
-      ssr: true,
       cors: true,
       prerender: true
     }
