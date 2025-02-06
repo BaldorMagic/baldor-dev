@@ -3,7 +3,7 @@
     <Navbar />
     <HeroSection />
     <Projects />
-    <Services />
+    <!-- <Services /> -->
     <Contact />
     <Footer />
   </div>

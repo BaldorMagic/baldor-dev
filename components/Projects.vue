@@ -36,34 +36,17 @@
         </div>
     </section>
 </template>
-<script setup lang="ts">
+<script setup>
 import { ref } from 'vue';
 
+const { $directus, $readItems } = useNuxtApp();
 const activeProject = ref(0);
-const iconColor: string[] = ['text-orange-600', 'text-teal-600', 'text-sky-600', 'text-purple-600', 'text-pink-500']
-const gradientFrom: string[] = ['from-orange-300', 'from-teal-300', 'from-sky-300', 'from-purple-200', 'from-rose-200']
-const gradientTo: string[] = ['to-amber-200', 'to-emerald-200', 'to-blue-200', 'to-violet-200', 'to-pink-200']
+const iconColor = ['text-orange-600', 'text-teal-600', 'text-sky-600', 'text-purple-600', 'text-pink-500'];
+const gradientFrom = ['from-orange-300', 'from-teal-300', 'from-sky-300', 'from-purple-200', 'from-rose-200'];
+const gradientTo = ['to-amber-200', 'to-emerald-200', 'to-blue-200', 'to-violet-200', 'to-pink-200'];
 
-
-
-interface Projects {
-
-    id: number;
-    title: string;
-    description: string;
-    metrics: JSON;
-    tags: JSON;
-    url: string;
-    icon: string;
-}
-
-const projects = ref<Projects[]>([]);
-
-onMounted(async () => {
-    const { getItems } = useDirectusItems();
-    const data = await getItems<Projects>({
-        collection: 'projects'
-    });
-    projects.value = data as Projects[];
+const { data: projects } = await useAsyncData('projects', () => {
+    return $directus.request($readItems('projects'));
 });
+
 </script>

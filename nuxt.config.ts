@@ -34,7 +34,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     directus: {
-      url: ""
+      url: "",
+      token: ""
     }
   },
   ssr: true,

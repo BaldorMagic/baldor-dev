@@ -34,7 +34,7 @@
 import { ref } from 'vue';
 
 interface Services {
-    id: number;
+    id?: number;
     title: string;
     description: string;
     best_for: string;
